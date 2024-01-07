@@ -1,5 +1,6 @@
 * {
     font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
 }
 
 body {
@@ -13,12 +14,14 @@ main {
     background-attachment: fixed;
     display: flex;
     justify-content: center;
+    flex-direction: column;
     flex-wrap: wrap;
 }
 
 nav {
     display: grid;
     justify-items: center;
+    place-items: center;
     align-items: center;
     grid-template-columns: 6fr 4fr 2fr;
     color: #fff;
