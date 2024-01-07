@@ -11,6 +11,9 @@ main {
     background-size: cover;
     background-position: center top;
     background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 nav {
@@ -19,7 +22,6 @@ nav {
     align-items: center;
     grid-template-columns: 6fr 4fr 2fr;
     color: #fff;
-
 }
 
 nav>h1 {
@@ -246,6 +248,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     gap: 30px;
     position: relative;
     bottom: 70px;
