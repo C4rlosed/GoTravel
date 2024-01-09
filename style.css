@@ -5,17 +5,27 @@
 
 body {
     margin: 0;
+    background-color: #F5F7F8;
 }
 
 main {
-    background-image: url(img/background.jpg);
+    /* background-image: url(img/background.jpg); */
     background-size: cover;
     background-position: center top;
-    background-attachment: fixed;
     display: flex;
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
+}
+
+.gotravel{
+    /* font-family: 'Kaushan Script', cursive; */
+    font-family: 'Playball', cursive;
+    font-size: 50pt;
+    font-weight: 300;
+    text-transform: lowercase;
+    cursor: pointer;
+    user-select: none;
 }
 
 nav {
@@ -23,16 +33,10 @@ nav {
     justify-items: center;
     place-items: center;
     align-items: center;
-    grid-template-columns: 6fr 4fr 2fr;
-    color: #fff;
+    grid-template-columns: 2fr 4fr 2fr;
+    color: #212121;
 }
 
-nav>h1 {
-    font-size: 30px;
-    margin-right: 100px;
-    cursor: pointer;
-    user-select: none;
-}
 
 nav>ul {
     list-style: none;
@@ -45,11 +49,11 @@ nav>ul {
 
 a {
     text-decoration: none;
-    color: #fff;
+    color: #212121;
 }
 
 ul>li>a {
-    color: #fff;
+    color: #212121;
     display: inline-block;
     position: relative;
     cursor: pointer;
@@ -61,7 +65,7 @@ ul>li>a::after {
     display: block;
     height: 2px;
     width: 0px;
-    background: #fff;
+    background: #212121;
     margin-top: 4px;
     transition: 0.3s;
     position: absolute;
@@ -72,49 +76,49 @@ ul>li>a.ativo::after {
     width: 100%;
 }
 
-nav>button {
+.btn-contact {
     height: 40px;
     width: 130px;
     border-radius: 30px;
     border-style: none;
-    background-color: #ffffff;
+    background-color: #D9CAB3;
     cursor: pointer;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
     user-select: none;
 }
 
-nav>button:hover {
-    color: #a16710;
-    background-color: #fab246;
-    box-shadow: 0 0 20px #fab24654;
+.btn-contact:hover {
+    background-color: #D9CAB3;
     transform: scale(1.1);
 }
 
-nav>button:active {
-    background-color: #fab246;
+.btn-contact:active {
+    background-color: #D9CAB3;
     transition: all 0.25s;
     -webkit-transition: all 0.25s;
     box-shadow: none;
     transform: scale(0.98);
 }
 
-nav>button>a {
-    color: #000000;
+.btn-contact>a {
+    color: #212121;
     font-weight: 600;
     user-select: none;
 }
 
-nav>button:hover {
-    background-color: #dfdfdf;
-}
-
 .banner {
-    height: 850px;
+    height: 100vh;
+    width: 190vh;
+    margin: 0 auto;
+    border-radius: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background-image: url(img/background.jpg);
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 
@@ -123,20 +127,21 @@ nav>button:hover {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: #fff;
+    color: #F5F7F8;
     cursor: default;
     user-select: none;
     padding-bottom: 5%;
 }
 
 .txt-banner>h1 {
-    font-size: 45px;
+    font-size: 45pt;
     margin: 0;
     letter-spacing: 10px;
+    text-transform: uppercase;
 }
 
 .txt-banner>p {
-    font-size: 22px;
+    font-size: 24pt;
     margin: 0;
     letter-spacing: 10px;
     text-transform: lowercase;
@@ -147,12 +152,10 @@ nav>button:hover {
     justify-content: center;
     align-items: center;
     margin: 0;
-    background: rgba(126, 186, 255, 0.2);
+    /* background: #c8eeff2f;
     border-radius: 40px;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    /* border: 1px solid rgba(255, 255, 255, 0.3); */
+    backdrop-filter: blur(2px);
+    -webkit-backdrop-filter: blur(2px); */
     width: 600px;
     height: 80px;
     margin-bottom: 10%;
@@ -174,7 +177,7 @@ form>input {
     padding-left: 0.8em;
     outline: none;
     overflow: hidden;
-    background-color: #F3F3F3;
+    background-color: #F5F7F8;
     border-radius: 40px;
     transition: all 0.5s;
 }
@@ -191,13 +194,13 @@ form>input::placeholder {
     color: #bdbdbd;
 }
 
-form>button {
-    color: #fff;
+.btn-pesquisar {
+    color: #F5F7F8;
     height: 40px;
     width: 130px;
     border-radius: 30px;
     border-style: none;
-    background-color: #fab246;
+    background-color: #212121;
     cursor: pointer;
     border: none;
     font-weight: 600;
@@ -207,15 +210,14 @@ form>button {
     user-select: none;
 }
 
-form>button:hover {
-    color: #a16710;
-    background-color: #fab246;
-    box-shadow: 0 0 20px #fab24654;
+.btn-pesquisar:hover {
+    color: #F5F7F8;
+    background-color: #323232;
     transform: scale(1.1);
 }
 
-form>button:active {
-    background-color: #fab246;
+.btn-pesquisar:active {
+    background-color: #323232;
     transition: all 0.25s;
     -webkit-transition: all 0.25s;
     box-shadow: none;
@@ -254,14 +256,25 @@ section {
     flex-wrap: wrap;
     gap: 30px;
     position: relative;
-    bottom: 70px;
+    bottom: 80px;
+}
+
+.img-section>span{
+    background-color: #F5F7F8;
+    border-radius: 20px;
+    height: 550px;
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0 10px 0;
 }
 
 .img-ctd {
-    height: 550px;
-    width: 400px;
+    height: 300px;
+    width: 350px;
     object-fit: cover;
-    border-radius: 2%;
+    border-radius: 15px;
 }
 
 .section-ctd {
