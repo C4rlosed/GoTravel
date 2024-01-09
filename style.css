@@ -29,11 +29,10 @@ main {
 }
 
 nav {
-    display: grid;
-    justify-items: center;
-    place-items: center;
+    display: flex;
     align-items: center;
-    grid-template-columns: 2fr 4fr 2fr;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
     color: #212121;
 }
 
@@ -77,8 +76,8 @@ ul>li>a.ativo::after {
 }
 
 .btn-contact {
-    height: 40px;
-    width: 130px;
+    height: 50px;
+    width: 150px;
     border-radius: 30px;
     border-style: none;
     background-color: #D9CAB3;
@@ -110,8 +109,9 @@ ul>li>a.ativo::after {
 .banner {
     height: 100vh;
     width: 90%;
+    padding-top: 5%;
     margin: 0 auto;
-    border-radius: 30px;
+    border-radius: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -130,7 +130,7 @@ ul>li>a.ativo::after {
     color: #F5F7F8;
     cursor: default;
     user-select: none;
-    padding-bottom: 5%;
+    margin-bottom: 15%;
 }
 
 .txt-banner>h1 {
@@ -138,10 +138,11 @@ ul>li>a.ativo::after {
     margin: 0;
     letter-spacing: 10px;
     text-transform: uppercase;
+    font-family: 'Gloock', serif;
 }
 
 .txt-banner>p {
-    font-size: 24pt;
+    font-size: 22pt;
     margin: 0;
     letter-spacing: 10px;
     text-transform: lowercase;
@@ -156,9 +157,7 @@ ul>li>a.ativo::after {
     border-radius: 40px;
     backdrop-filter: blur(2px);
     -webkit-backdrop-filter: blur(2px); */
-    width: 600px;
-    height: 80px;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 form {
@@ -166,15 +165,14 @@ form {
     align-items: center;
     justify-content: center;
     gap: 20px;
-    user-select: none;
 }
 
 
 form>input {
     border: 2px solid transparent;
-    width: 25em;
-    height: 2.5em;
-    padding-left: 0.8em;
+    width: 50rem;
+    height: 3.5rem;
+    padding-left: 1rem;
     outline: none;
     overflow: hidden;
     background-color: #F5F7F8;
@@ -186,17 +184,19 @@ form>input:hover,
 form>input:focus {
     border: 2px solid #4A9DEC;
     box-shadow: 0px 0px 0px 7px rgb(74, 157, 236, 20%);
-    background-color: white;
+    background-color: #F5F7F8;
 }
 
 form>input::placeholder {
+    font-size: 1rem;
     font-weight: 600;
     color: #bdbdbd;
+    user-select: none;
 }
 
 .btn-pesquisar {
     color: #F5F7F8;
-    height: 40px;
+    height: 3.5rem;
     width: 130px;
     border-radius: 30px;
     border-style: none;
@@ -235,22 +235,28 @@ section {
     margin: 0 auto;
 }
 
-.section-services{
-
-}
-
 .txt-section {
     text-align: center;
     width: 50%;
-    margin: 5% 0 10% 0;
+    padding: 60px 0 10px 0;
+    position: relative;
+    background-color: #F5F7F8;
+    border-radius: 50px;
+    bottom: 180px;
 }
 
 .txt-section>h2 {
-    font-size: 30px;
+    font-size: 2.1rem;
+    letter-spacing: 8px;
+    margin-bottom: 8%;
+    font-family: 'Gloock', serif;
 }
 
 .txt-section>p {
-    font-size: 20px;
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    width: 85vh;
+    margin: 0 auto;
 }
 
 .img-section {
@@ -334,7 +340,6 @@ footer{
     margin: 0 auto;
     height: 20vh;
     gap: 20px;
-    border-radius: 50px 50px 0 0;
     color: #F5F7F8;
     text-align: center;
 }
