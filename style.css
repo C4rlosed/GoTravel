@@ -30,7 +30,8 @@ main {
 .gotravel {
     /* font-family: 'Kaushan Script', cursive; */
     font-family: 'Playball', cursive;
-    font-size: 4rem;
+                    /* min , desejável , máx */
+    font-size: clamp(1.75rem, 1.75rem + 2vw, 5rem);
     font-weight: 300;
     text-transform: lowercase;
     cursor: pointer;
@@ -40,7 +41,7 @@ main {
 .gotravel-p {
     /* font-family: 'Kaushan Script', cursive; */
     font-family: 'Playball', cursive;
-    font-size: 27pt;
+    font-size: clamp(0.5rem, 1rem + 1vw, 2.5rem);
     font-weight: 300;
     text-transform: lowercase;
     cursor: pointer;
@@ -166,6 +167,7 @@ ul>li>a.ativo::after {
 }
 
 .txt-banner {
+    width: 80%;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -174,10 +176,11 @@ ul>li>a.ativo::after {
     cursor: default;
     user-select: none;
     margin-bottom: 15%;
+    gap: 10px;
 }
 
 .txt-banner>h1 {
-    font-size: 45pt;
+    font-size: clamp(1.5rem, 1.8rem + 2vw, 4rem);
     margin: 0;
     letter-spacing: 10px;
     text-transform: uppercase;
@@ -185,7 +188,7 @@ ul>li>a.ativo::after {
 }
 
 .txt-banner>p {
-    font-size: 22pt;
+    font-size: clamp(0.5rem, 0.90rem + 1vw, 2rem);
     margin: 0;
     letter-spacing: 10px;
     text-transform: lowercase;
@@ -209,12 +212,13 @@ form {
     justify-content: center;
     flex-wrap: wrap;
     gap: 20px;
+    width: 100%;
 }
 
 
 form>input {
     border: 2px solid transparent;
-    width: 50rem;
+    width: clamp(20vw,40vw + 20px, 60vw);
     height: 3.5rem;
     padding-left: 1rem;
     outline: none;
@@ -222,7 +226,7 @@ form>input {
     background-color: #F5F7F8;
     border-radius: 40px;
     transition: all 0.5s;
-    font-size: 1rem;
+    font-size: clamp(0.5rem, 0.5rem + 1vw, 1rem);
     font-weight: 600;
     color: #212121;
 }
@@ -235,7 +239,7 @@ form>input:focus {
 }
 
 form>input::placeholder {
-    font-size: 1rem;
+    font-size: clamp(0.5rem, 0.5rem + 1vw, 1rem);
     font-weight: 600;
     color: #bdbdbd;
     user-select: none;
@@ -284,7 +288,7 @@ section {
 .txt-section {
     text-align: center;
     width: 50%;
-    padding: 60px 0 10px 0;
+    padding: 2vw 2vw 2vw 2vw;
     position: relative;
     background-color: #F5F7F8;
     border-radius: 50px;
@@ -292,7 +296,7 @@ section {
 }
 
 .sub-title {
-    font-size: 2.1rem;
+    font-size: clamp(0.5rem, 0.90rem + 1vw, 2rem);
     letter-spacing: 8px;
     margin-bottom: 8%;
     text-transform: uppercase;
@@ -300,9 +304,9 @@ section {
 }
 
 .sub-text {
-    font-size: 1.5rem;
+    font-size: clamp(0.5rem, 0.5rem + 1vw, 1.6rem);
     letter-spacing: 2px;
-    width: 85vh;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -315,12 +319,8 @@ section {
     position: relative;
     bottom: 100px;
     gap: 3%;
-    width: 100%;
+    width: 90%;
     height: 100%;
-    /* background-image: url(img/background.jpg);
-    background-position: center center;
-    background-attachment: fixed;
-    border-radius: 50px; */
 }
 
 .card {
@@ -390,6 +390,7 @@ section {
 
 .services-title {
     text-align: center;
+    margin-bottom: 5%;
 }
 
 .services {
