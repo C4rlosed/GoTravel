@@ -2,6 +2,10 @@ html {
     scroll-behavior: smooth;
 }
 
+img{
+    -webkit-user-drag: none;
+}
+
 * {
     font-family: 'Montserrat', sans-serif;
     box-sizing: border-box;
@@ -287,14 +291,15 @@ section {
     bottom: 170px;
 }
 
-.txt-section>h2 {
+.sub-title {
     font-size: 2.1rem;
     letter-spacing: 8px;
     margin-bottom: 8%;
+    text-transform: uppercase;
     font-family: 'Gloock', serif;
 }
 
-.txt-section>p {
+.sub-text {
     font-size: 1.5rem;
     letter-spacing: 2px;
     width: 85vh;
@@ -319,22 +324,24 @@ section {
 }
 
 .card {
-    height: 400px;
+    height: 380px;
     width: 250px;
     overflow: hidden;
     position: relative;
     border-radius: 20px;
-    border: solid #93A98E 5px;
+    /* border: solid #93A98E 5px; */
+    box-shadow:  25px 25px 50px #acadae,
+             -25px -25px 50px #ffffff;
 }
 
 .card-body {
-    height: 100%;
+    height: 110%;
     width: 100%;
     bottom: -100%;
     right: 0;
     position: absolute;
-    border-radius: 15px 15px 0 0;
-    background-color: #93a98e7c;
+    border-radius: 10px 10px 0 0;
+    background-color: #93a98e80;
     backdrop-filter: blur(5px);
     color: #F5F7F8;
     padding: 30px;
@@ -342,6 +349,14 @@ section {
     flex-direction: column;
     justify-content: center;
     transition: ease 1s;
+}
+
+.card-body>img{
+    height: 30px;
+    width: 20px;
+    position: absolute;
+    bottom: 92%;
+    margin: 0 auto;
 }
 
 .card:hover .card-body {
@@ -364,7 +379,81 @@ section {
     border-radius: 15px;
 }
 
-.section-services {}
+.section-services {
+    width: 90%;
+    margin: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.services-title {
+    text-align: center;
+}
+
+.services {
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2%;
+}
+
+.services-campo {
+    gap: 10px;
+    position: relative;
+    width: 50vh;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px 0 20px;
+    border-radius: 15px;
+    background-color: #F5F7F8;
+    box-shadow: 40px 40px 80px #dddedf,
+        -40px -40px 80px #ffffff;
+    z-index: 0;
+    overflow: hidden;
+}
+.services-campo:before{
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -20px;
+    right: -20px;
+    background-color: #93a98e63;
+    height: 32px;
+    width: 32px;
+    border-radius: 5px;
+    transform: scale(3);
+    transform-origin: 50% 50%;
+    transition: transform 0.35s ease-out;
+}
+.services-campo:hover{
+    transform: scale(1.05);
+    transition: all 0.5s;
+}
+.services-campo:hover:before{
+    transform: scale(40);
+    cursor: pointer;
+}
+
+.services-campo>h2 {
+    font-size: 15pt;
+    font-weight: 600;
+}
+
+.services-campo>p {
+    width: 90%;
+}
+
+.services-icon {
+    height: 40px;
+    width: 50px;
+}
 
 
 footer {
