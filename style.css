@@ -317,7 +317,7 @@ section {
 
 .card{
     height: 400px;
-    width: 300px;
+    width: 250px;
     overflow: hidden;
     position: relative;
     border-radius: 20px;
@@ -343,7 +343,7 @@ section {
     bottom: 0;
 }
 .card-h1{
-    font-size: 15pt;
+    font-size: 13pt;
 }
 .card-p{
     line-height: 20px;
@@ -354,6 +354,10 @@ section {
     width: 100%;
     object-fit: cover;
     border-radius: 15px;
+}
+
+.section-services{
+    
 }
 
 
