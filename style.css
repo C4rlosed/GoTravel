@@ -2,7 +2,7 @@ html {
     scroll-behavior: smooth;
 }
 
-img{
+img {
     -webkit-user-drag: none;
 }
 
@@ -30,7 +30,7 @@ main {
 .gotravel {
     /* font-family: 'Kaushan Script', cursive; */
     font-family: 'Playball', cursive;
-                    /* min , desejável , máx */
+    /* min , desejável , máx */
     font-size: clamp(1.75rem, 1.75rem + 2vw, 5rem);
     font-weight: 300;
     text-transform: lowercase;
@@ -218,7 +218,7 @@ form {
 
 form>input {
     border: 2px solid transparent;
-    width: clamp(20vw,40vw + 20px, 60vw);
+    width: clamp(20vw, 40vw + 20px, 60vw);
     height: 3.5rem;
     padding-left: 1rem;
     outline: none;
@@ -331,8 +331,8 @@ section {
     position: relative;
     border-radius: 20px;
     /* border: solid #93A98E 5px; */
-    box-shadow:  25px 25px 50px #acadae,
-             -25px -25px 50px #ffffff;
+    box-shadow: 25px 25px 50px #acadae,
+        -25px -25px 50px #ffffff;
 }
 
 .card-body {
@@ -352,7 +352,7 @@ section {
     transition: ease 1s;
 }
 
-.card-body>img{
+.card-body>img {
     height: 30px;
     width: 20px;
     position: absolute;
@@ -420,7 +420,8 @@ section {
     z-index: 0;
     overflow: hidden;
 }
-.services-campo:before{
+
+.services-campo:before {
     content: '';
     position: absolute;
     z-index: -1;
@@ -434,11 +435,13 @@ section {
     transform-origin: 50% 50%;
     transition: transform 0.35s ease-out;
 }
-.services-campo:hover{
+
+.services-campo:hover {
     transform: scale(1.05);
     transition: all 0.5s;
 }
-.services-campo:hover:before{
+
+.services-campo:hover:before {
     transform: scale(40);
     cursor: pointer;
 }
@@ -457,31 +460,75 @@ section {
     width: 50px;
 }
 
-.assessment{
-    border: solid;
+.assessment {
+
     width: 90%;
     margin: 0 auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-bottom: 10%;
 }
-.asses-title{
-    border: solid;
+
+.asses-title {
+
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.div-people-asses {
+    display: flex;
+}
+
+.div-more-asses {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}
+
+.people-asses {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.people-asses-one {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
 }
-.people-asses{
-    border: solid;
-}
-.img-people-asses{
+
+.img-people-asses {
     object-fit: cover;
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
     border-radius: 50%;
 }
-.img-people-asses-one{
-    
+
+.img-people-asses-one {
+    object-fit: cover;
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
 }
+
+.people-asses-p {
+    width: 50%;
+    font-size: 15px;
+}
+.people-asses-p-one {
+    width: 50%;
+    font-size: 20px;
+}
+
 footer {
     display: flex;
     align-items: center;
