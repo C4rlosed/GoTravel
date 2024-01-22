@@ -470,10 +470,18 @@ section {
     border: solid;
     text-align: center;
 }
-.peploe-asses{
+.people-asses{
     border: solid;
 }
-
+.img-people-asses{
+    object-fit: cover;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+}
+.img-people-asses-one{
+    
+}
 footer {
     display: flex;
     align-items: center;
