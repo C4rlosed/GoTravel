@@ -498,7 +498,6 @@ section {
 }
 
 .people-asses-one {
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -523,6 +522,7 @@ section {
 .people-asses-p {
     width: 50%;
     font-size: 15px;
+    text-align: left;
 }
 .people-asses-p-one {
     width: 50%;
